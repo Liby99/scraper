@@ -146,3 +146,8 @@ pub mod html;
 pub mod node;
 pub mod element_ref;
 pub mod selector;
+
+#[test]
+fn test_foster_parenting() {
+    Html::parse_document("<table><form><tr></tr></form></table>");
+}
